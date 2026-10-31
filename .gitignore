@@ -1,0 +1,34 @@
+# Secrets and local config
+wp-config.php
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# Tooling caches (not source)
+.tools/MinGit/
+.tools/MinGit-tmp/
+.tools/MinGit.zip
+.tools/node-v22/
+.tools/node-v22.zip
+.tools/node/
+
+# Dependencies
+**/node_modules/
+
+# WordPress runtime
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Build artifacts (keep committed landing bundle in theme)
+landing-src/dist/
