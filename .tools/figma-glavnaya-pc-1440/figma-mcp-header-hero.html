@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440" />
+    <title>Figma MCP — header + hero (6:2114, 6:1682)</title>
+    <link rel="stylesheet" href="../../wp-content/themes/steklosistemy/landing/assets/landing-app.css" />
+    <link rel="stylesheet" href="./figma-document.css" />
+    <style>
+      body {
+        margin: 0;
+        width: 1440px;
+        max-width: 100%;
+        background: #2c6489;
+      }
+      .figma-mcp-page {
+        width: 1440px;
+        margin: 0 auto;
+      }
+      .figma-mcp-note {
+        padding: 8px 20px;
+        font: 500 13px/1.4 Hauora, sans-serif;
+        background: #152f50;
+        color: #fff9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="figma-mcp-page">
+      <p class="figma-mcp-note">
+        Статическая выгрузка из Figma MCP (узлы header и hero). Полная страница — в <code>index.html</code>.
+      </p>
+      <header class="header" data-header-theme="dark" aria-label="Шапка">
+        <a class="logo" href="#" aria-label="Стеклосистемы">
+          <img src="../../wp-content/themes/steklosistemy/landing/assets/logo.svg" width="120" height="40" alt="" />
+        </a>
+        <nav aria-label="Основное меню">
+          <div class="nav-group">
+            <button type="button">Услуги <img class="icon" src="../../wp-content/themes/steklosistemy/landing/assets/mini_arrow_down.svg" alt="" /></button>
+          </div>
+          <div class="nav-group">
+            <button type="button">О компании <img class="icon" src="../../wp-content/themes/steklosistemy/landing/assets/mini_arrow_down.svg" alt="" /></button>
+          </div>
+          <div class="nav-group">
+            <button type="button">Покупателям <img class="icon" src="../../wp-content/themes/steklosistemy/landing/assets/mini_arrow_down.svg" alt="" /></button>
+          </div>
+          <div class="nav-group">
+            <button type="button">Партнерам <img class="icon" src="../../wp-content/themes/steklosistemy/landing/assets/mini_arrow_down.svg" alt="" /></button>
+          </div>
+          <a class="nav-link" href="#">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="icon-btn" aria-label="Поиск">
+            <img class="icon" src="../../wp-content/themes/steklosistemy/landing/assets/search_1.svg" alt="" />
+          </button>
+          <button type="button" class="icon-btn" aria-label="Телефон">
+            <img class="icon" src="../../wp-content/themes/steklosistemy/landing/assets/phone.svg" alt="" />
+          </button>
+        </div>
+      </header>
+      <section class="hero" style="height: 810px; min-height: 810px" data-header-theme="dark" aria-labelledby="hero-title">
+        <img class="hero-art" src="../../wp-content/themes/steklosistemy/landing/assets/glass.png" alt="" />
+        <div class="top-shade"></div>
+        <picture class="stars">
+          <img src="../../wp-content/themes/steklosistemy/landing/assets/stars.svg" alt="" />
+        </picture>
+        <div class="hero-content">
+          <div class="intro">
+            <h1 id="hero-title">
+              <span>Конструкции</span>
+              <span>из безопасного</span>
+              <span>закаленного стекла</span>
+              <span>в Крыму</span>
+            </h1>
+            <p>
+              Изготавливаем и монтируем душевые, ограждения, перегородки, двери и другие конструкции любой
+              сложности
+            </p>
+          </div>
+          <div class="actions">
+            <a class="action" href="#estimate"
+              >Рассчитать стоимость <img class="icon" src="../../wp-content/themes/steklosistemy/landing/assets/arrow.svg" alt=""
+            /></a>
+            <a class="action secondary" href="#"
+              ><img class="icon" src="../../wp-content/themes/steklosistemy/landing/assets/max.svg" alt="" /> Написать в МАХ</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

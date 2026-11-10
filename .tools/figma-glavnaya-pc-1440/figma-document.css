@@ -1,0 +1,157 @@
+/**
+ * Режим сравнения с Figma «Главная PC 1440» (node 6:1680).
+ * Линейная высота секций как на артборде, без привязки к 100svh.
+ */
+html.figma-pc-1440-document {
+  background: #c9cdd3;
+}
+
+html.figma-pc-1440-document body {
+  margin: 0;
+  overflow-x: hidden;
+  scroll-snap-type: none !important;
+}
+
+html.figma-pc-1440-document .figma-pc-1440-shell {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 48px rgba(15, 16, 18, 0.12);
+}
+
+/* Шрифты при открытии file:// (в CSS лендинга пути от корня сайта). */
+@font-face {
+  font-family: Bicubik;
+  src: url("../../wp-content/themes/steklosistemy/landing-src/public/fonts/Bicubik.OTF") format("opentype");
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Hauora;
+  src: url("../../wp-content/themes/steklosistemy/landing-src/public/fonts/Hauora-Medium.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Hauora;
+  src: url("../../wp-content/themes/steklosistemy/landing-src/public/fonts/Hauora-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  html.figma-pc-1440-document main > .hero {
+    height: 810px !important;
+    min-height: 810px !important;
+  }
+
+  html.figma-pc-1440-document #catalog {
+    min-height: 1514px !important;
+    height: auto !important;
+  }
+
+  html.figma-pc-1440-document #catalog .catalog-screen {
+    height: auto !important;
+    min-height: 757px;
+    overflow: visible !important;
+  }
+
+  html.figma-pc-1440-document .benefits {
+    height: 810px !important;
+    min-height: 810px !important;
+  }
+
+  html.figma-pc-1440-document .benefits-scene {
+    position: relative !important;
+    height: 810px !important;
+  }
+
+  html.figma-pc-1440-document .portfolio {
+    height: 810px !important;
+    min-height: 810px !important;
+  }
+
+  html.figma-pc-1440-document .portfolio-scene {
+    position: relative !important;
+    height: 810px !important;
+  }
+
+  html.figma-pc-1440-document #estimate,
+  html.figma-pc-1440-document .estimate.estimate--outdoor {
+    min-height: 810px !important;
+    height: auto !important;
+  }
+
+  html.figma-pc-1440-document .estimate.estimate--outdoor {
+    min-height: 820px !important;
+  }
+
+  html.figma-pc-1440-document #work-steps {
+    min-height: 820px !important;
+    height: auto !important;
+  }
+
+  html.figma-pc-1440-document #clients {
+    height: 820px !important;
+    min-height: 820px !important;
+  }
+
+  html.figma-pc-1440-document #faq,
+  html.figma-pc-1440-document #reviews {
+    min-height: 820px !important;
+    height: auto !important;
+  }
+
+  html.figma-pc-1440-document .site-footer {
+    min-height: 453px !important;
+  }
+
+  html.figma-pc-1440-document main > .hero,
+  html.figma-pc-1440-document main > .benefits,
+  html.figma-pc-1440-document main > .portfolio,
+  html.figma-pc-1440-document main > .estimate,
+  html.figma-pc-1440-document main > .work-steps,
+  html.figma-pc-1440-document main > .clients,
+  html.figma-pc-1440-document main > .faq,
+  html.figma-pc-1440-document main > .reviews {
+    overflow: visible !important;
+  }
+
+  html.figma-pc-1440-document .catalog {
+    --unit: calc(1440px / 1440);
+  }
+
+  html.figma-pc-1440-document .benefits-stage,
+  html.figma-pc-1440-document .portfolio-stage {
+    --benefit-u: 1px;
+    --portfolio-u: 1px;
+  }
+
+  html.figma-pc-1440-document :root,
+  html.figma-pc-1440-document .estimate,
+  html.figma-pc-1440-document .work-steps,
+  html.figma-pc-1440-document .faq,
+  html.figma-pc-1440-document .reviews,
+  html.figma-pc-1440-document .clients,
+  html.figma-pc-1440-document .site-footer {
+    --estimate-u: 1px;
+    --step-u: 1px;
+    --qa-u: 1px;
+    --clients-u: 1px;
+    --footer-u: 1px;
+    --pc-u: 1px;
+  }
+}
+
+.figma-pc-1440-banner {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 10px 16px;
+  font: 500 13px/1.4 Hauora, system-ui, sans-serif;
+  color: #0f1012;
+  background: #fff3cd;
+  border-bottom: 1px solid #e0c56e;
+  text-align: center;
+}

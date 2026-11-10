@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru" class="figma-pc-1440-document">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440" />
+    <meta name="theme-color" content="#2c6489" />
+    <title>Главная PC 1440 — макет Figma (ShbRIAPaQTkatEXyjQD22b)</title>
+    <link rel="stylesheet" href="./figma-document.css" />
+    <link rel="stylesheet" href="../../wp-content/themes/steklosistemy/landing/assets/landing-app.css" />
+    <script>
+      /** Отключаем wheel-snap ScrollExperience — в Figma обычный вертикальный скролл. */
+      (function () {
+        const nativeMatchMedia = window.matchMedia.bind(window);
+        window.matchMedia = function (query) {
+          const result = nativeMatchMedia(query);
+          if (query === "(min-width: 1200px) and (pointer: fine)") {
+            return Object.assign({}, result, { matches: false });
+          }
+          return result;
+        };
+      })();
+      window.__STEKLO_LANDING_PREVIEW__ = {
+        baseUrl: "../../wp-content/themes/steklosistemy/landing/",
+      };
+    </script>
+    <script src="../../wp-content/themes/steklosistemy/landing/preview-data.js"></script>
+    <script>
+      window.STEKLO = Object.assign({}, window.STEKLO, {
+        assetBase: "../../wp-content/themes/steklosistemy/landing/assets/",
+      });
+    </script>
+  </head>
+  <body class="steklo-landing-page">
+    <p class="figma-pc-1440-banner">
+      Сверка с Figma «Главная PC 1440». Окно браузера — <strong>1440&nbsp;px</strong> по ширине (или DevTools → responsive 1440×900).
+    </p>
+    <div class="figma-pc-1440-shell">
+      <div id="root"></div>
+    </div>
+    <script type="module" src="../../wp-content/themes/steklosistemy/landing/assets/landing-app.js"></script>
+  </body>
+</html>
